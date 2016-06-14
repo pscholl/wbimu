@@ -1,5 +1,3 @@
-# wbimu - miniature ultra-wideband inertial platform
-
  A re-configurable standalone board including the latest Bosch inertial sensors. Includes a gyroscope, accelerometer, magnetometer, humidity, pressure and temperature. The board is 13x22mm large.
 
  The board can either be used battery-powered in a standalone fashion, or connected to a Linux machine via USB Type C.
