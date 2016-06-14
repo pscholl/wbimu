@@ -1,0 +1,14 @@
+"Qty";"Value";"Device";"Package";"Parts";"Description";"HEIGHT";"PARTNO";
+"1";"";"AAT3681A";"SC70JW-8";"AAT3681";"1-cell LiIon charger";"";"AAT3681AIJS-4.2-T1";
+"3";"100nf";"CAPACITOR_0402";"CAPC1005X60N";"C1, C2, C4";"";"";"";
+"1";"10µF";"CAPACITOR_0603";"CAPC1608X92N";"C3";"";"";"";
+"1";"1k";"RESISTOR_0402";"RESC1005X40AN";"R1";"";"";"";
+"2";"5.1k";"RESISTOR_0402";"RESC1005X40AN";"R2, R3";"";"";"";
+"1";"BATPADS";"BATPADS";"BATPADS";"U$2";"";"";"";
+"1";"BME280";"BME280";"BME280";"BME";"DIGITAL HUMIDITY, PRESSURE AND TEMPERATURE SENSOR* Digital interface I²C (up to 3.4 MHz) and SPI (3 and 4 wire, up to 10 MHz)* Supply voltage VDD main supply voltage range: 1.71 V to 3.6 V*VDDIO interface voltage range: 1.2 V to 3.6 V";"";"262-BME280";
+"1";"BMF055";"BMF055";"LGA-28";"BMF";"";"";"262-BMF055";
+"1";"CSTCE";"CSTCE";"CSCTE_G15C";"OSC";"";"";"490-7848-1-ND";
+"1";"DWM1000_SPECIAL";"DWM1000_SPECIAL";"DWM1000_CASTELLATED_SPECIAL";"DWM";"";"";"dwm1000";
+"1";"MCP2210";"MCP2210";"QFN-20";"MCP2210";"";"";"579-MCP2210TIMQ";
+"1";"MIC53533.3V";"MIC53533.3V";"MIC5353";"U$1";"";".6";"MIC5353-3.3YMT";
+"1";"USBC_NOSBU";"USBC_NOSBU";"KEYSTONE_953_NOPADS_NOSBU";"USBC";"";"";"";

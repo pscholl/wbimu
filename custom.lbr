@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -128,7 +128,7 @@
 <wire x1="-1.6" y1="0.75" x2="1.6" y2="0.75" width="0.1" layer="21"/>
 <wire x1="1.6" y1="0.75" x2="1.6" y2="-0.75" width="0.1" layer="21"/>
 <smd name="P$1" x="-1.2" y="0" dx="2" dy="0.4" layer="1" rot="R90"/>
-<smd name="P$2" x="0" y="0" dx="2" dy="0.4" layer="1" rot="R90"/>
+<smd name="P$2" x="0" y="-0.1" dx="1.4" dy="0.4" layer="1" rot="R90"/>
 <smd name="P$3" x="1.2" y="0" dx="2" dy="0.4" layer="1" rot="R90"/>
 </package>
 <package name="AR20-AK510">
@@ -585,7 +585,6 @@
 <smd name="8" x="-0.75" y="0.89" dx="0.33" dy="0.97" layer="1"/>
 <smd name="7" x="-0.25" y="0.89" dx="0.33" dy="0.97" layer="1"/>
 <smd name="6" x="0.25" y="0.89" dx="0.33" dy="0.97" layer="1"/>
-<smd name="5" x="0.75" y="0.89" dx="0.33" dy="0.97" layer="1"/>
 <smd name="1" x="-0.75" y="-0.89" dx="0.33" dy="0.97" layer="1"/>
 <smd name="2" x="-0.25" y="-0.89" dx="0.33" dy="0.97" layer="1"/>
 <smd name="3" x="0.25" y="-0.89" dx="0.33" dy="0.97" layer="1"/>
@@ -595,6 +594,10 @@
 <wire x1="-1" y1="0.875" x2="1" y2="0.875" width="0.127" layer="21"/>
 <wire x1="-1" y1="-0.875" x2="1" y2="-0.875" width="0.127" layer="21"/>
 <circle x="-0.76" y="-0.2" radius="0.043009375" width="0.2" layer="21"/>
+</package>
+<package name="BATPADS">
+<smd name="P$1" x="-0.5" y="0" dx="0.5" dy="2" layer="1"/>
+<smd name="P$2" x="0.5" y="0" dx="0.5" dy="2" layer="1"/>
 </package>
 </packages>
 <symbols>
@@ -758,7 +761,6 @@
 <pin name="BAT" x="12.7" y="2.54" length="middle" direction="pwr" rot="R180"/>
 <pin name="ADP" x="-12.7" y="2.54" length="middle" direction="pwr"/>
 <pin name="GND" x="0" y="-12.7" visible="pad" length="middle" direction="pwr" rot="R90"/>
-<pin name="STAT" x="12.7" y="0" length="middle" direction="oc" rot="R180"/>
 <wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-7.62" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
@@ -766,6 +768,10 @@
 <text x="-2.032" y="-6.858" size="1.524" layer="97">GND</text>
 <text x="-7.62" y="5.588" size="1.524" layer="96">&gt;VALUE</text>
 <text x="2.286" y="-9.652" size="1.524" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="BATPADS">
+<pin name="+" x="-7.62" y="2.54" visible="pin" length="middle"/>
+<pin name="-" x="-7.62" y="0" visible="pin" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1025,7 +1031,22 @@
 <connect gate="G$1" pin="EN" pad="1"/>
 <connect gate="G$1" pin="GND" pad="6 7 8"/>
 <connect gate="G$1" pin="ISET" pad="2"/>
-<connect gate="G$1" pin="STAT" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BATPADS">
+<gates>
+<gate name="G$1" symbol="BATPADS" x="-7.62" y="0"/>
+</gates>
+<devices>
+<device name="" package="BATPADS">
+<connects>
+<connect gate="G$1" pin="+" pad="P$1"/>
+<connect gate="G$1" pin="-" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
