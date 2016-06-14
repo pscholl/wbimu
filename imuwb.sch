@@ -1622,7 +1622,9 @@ http://www.weartronics.com/</description>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="OSC" library="custom" deviceset="CSTCE" device=""/>
+<part name="OSC" library="custom" deviceset="CSTCE" device="">
+<attribute name="PARTNO" value="PRQC12.00CR1010V00L"/>
+</part>
 <part name="C1" library="ipc-7351-capacitor" deviceset="CAPACITOR_" device="0402" value="100nf"/>
 <part name="C2" library="ipc-7351-capacitor" deviceset="CAPACITOR_" device="0402" value="100nf"/>
 <part name="R1" library="ipc-7351-resistor" deviceset="RESISTOR_" device="0402" value="1k"/>
@@ -1730,14 +1732,14 @@ on SWCLK or SWCLK
 <instance part="USBC" gate="G$1" x="144.78" y="116.84"/>
 <instance part="R2" gate="G$1" x="195.58" y="129.54" rot="R90"/>
 <instance part="GND7" gate="1" x="195.58" y="139.7" rot="R180"/>
-<instance part="AAT3681" gate="G$1" x="264.16" y="116.84">
-<attribute name="PARTNO" x="264.16" y="116.84" size="1.778" layer="96" display="off"/>
+<instance part="AAT3681" gate="G$1" x="259.08" y="127">
+<attribute name="PARTNO" x="259.08" y="127" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="GND8" gate="1" x="264.16" y="96.52"/>
-<instance part="C3" gate="G$1" x="287.02" y="111.76" rot="MR270"/>
-<instance part="GND9" gate="1" x="287.02" y="96.52"/>
-<instance part="R3" gate="G$1" x="246.38" y="106.68" rot="R90"/>
-<instance part="GND10" gate="1" x="246.38" y="96.52"/>
+<instance part="GND8" gate="1" x="259.08" y="106.68"/>
+<instance part="C3" gate="G$1" x="281.94" y="121.92" rot="MR270"/>
+<instance part="GND9" gate="1" x="281.94" y="106.68"/>
+<instance part="R3" gate="G$1" x="241.3" y="116.84" rot="R90"/>
+<instance part="GND10" gate="1" x="241.3" y="106.68"/>
 <instance part="+3V10" gate="G$1" x="294.64" y="48.26" rot="R270"/>
 <instance part="GND11" gate="1" x="294.64" y="63.5" rot="R90"/>
 <instance part="GND12" gate="1" x="238.76" y="55.88" rot="R270"/>
@@ -1918,12 +1920,12 @@ on SWCLK or SWCLK
 <segment>
 <pinref part="GND8" gate="1" pin="GND"/>
 <pinref part="AAT3681" gate="G$1" pin="GND"/>
-<wire x1="264.16" y1="99.06" x2="264.16" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="109.22" x2="259.08" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND10" gate="1" pin="GND"/>
 <pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="246.38" y1="99.06" x2="246.38" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="109.22" x2="241.3" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C4" gate="G$1" pin="1"/>
@@ -1945,7 +1947,7 @@ on SWCLK or SWCLK
 <segment>
 <pinref part="GND9" gate="1" pin="GND"/>
 <pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="287.02" y1="99.06" x2="287.02" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="109.22" x2="281.94" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -2145,13 +2147,13 @@ on SWCLK or SWCLK
 </segment>
 <segment>
 <pinref part="AAT3681" gate="G$1" pin="ADP"/>
-<wire x1="251.46" y1="119.38" x2="246.38" y2="119.38" width="0.1524" layer="91"/>
-<label x="236.22" y="119.38" size="1.778" layer="95"/>
+<wire x1="246.38" y1="129.54" x2="241.3" y2="129.54" width="0.1524" layer="91"/>
+<label x="231.14" y="129.54" size="1.778" layer="95"/>
 <pinref part="AAT3681" gate="G$1" pin="EN"/>
-<wire x1="246.38" y1="119.38" x2="243.84" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="116.84" x2="246.38" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="246.38" y1="116.84" x2="246.38" y2="119.38" width="0.1524" layer="91"/>
-<junction x="246.38" y="119.38"/>
+<wire x1="241.3" y1="129.54" x2="238.76" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="127" x2="241.3" y2="127" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="127" x2="241.3" y2="129.54" width="0.1524" layer="91"/>
+<junction x="241.3" y="129.54"/>
 </segment>
 </net>
 <net name="CC" class="0">
@@ -2180,8 +2182,8 @@ on SWCLK or SWCLK
 <segment>
 <pinref part="AAT3681" gate="G$1" pin="ISET"/>
 <pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="251.46" y1="114.3" x2="246.38" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="246.38" y1="114.3" x2="246.38" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="124.46" x2="241.3" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="124.46" x2="241.3" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VBAT" class="0">
@@ -2202,10 +2204,10 @@ on SWCLK or SWCLK
 </segment>
 <segment>
 <pinref part="AAT3681" gate="G$1" pin="BAT"/>
-<label x="279.908" y="119.38" size="1.778" layer="95"/>
+<label x="274.828" y="129.54" size="1.778" layer="95"/>
 <pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="276.86" y1="119.38" x2="287.02" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="287.02" y1="119.38" x2="287.02" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="129.54" x2="281.94" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="129.54" x2="281.94" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">

@@ -686,7 +686,7 @@ Your Eurocircuits Team
 <attribute name="PARTNO" value="579-MCP2210TIMQ" x="9.58" y="5.43" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="OSC" library="custom" package="CSCTE_G15C" value="CSTCE" x="5.88" y="5.58" rot="MR270">
-<attribute name="PARTNO" value="490-7848-1-ND" x="5.88" y="5.58" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="PARTNO" value="PRQC12.00CR1010V00L" x="5.88" y="5.58" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="C1" library="ipc-7351-capacitor" package="CAPC1005X60N" value="100nf" x="9.24" y="11.67" rot="MR270"/>
 <element name="C2" library="ipc-7351-capacitor" package="CAPC1005X60N" value="100nf" x="3.07" y="7.47" rot="MR270"/>
